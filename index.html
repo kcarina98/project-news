@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>NEWS</h1>
+    <form onsubmit="return false">
+      <input type="text" id="suche" placeholder="Wonach suchst du?" />
+      <select name="lang" id="sprache">
+        Sprache:
+        <option value="de">deutsch</option>
+        <option value="en">englisch</option>
+        <option value="es">spanisch</option>
+        <option value="fr">französisch</option>
+        <option value="it">italienisch</option>
+        <option value="ru">russisch</option>
+        <option value="ar">arabisch</option>
+        <option value="hr">hebräisch</option>
+        <option value="nl">holländisch</option>
+        <option value="no">norwegisch</option>
+        <option value="pt">potugisisch</option>
+        <option value="zh">chinesisch</option>
+      </select>
+      <select name="lang" id="relevanz">
+        Sortieren nach:
+        <option value="relevancy">Relevanz</option>
+        <option value="popularity">Popularität</option>
+        <option value="publishedAt">Neueste zurerst</option>
+      </select>
+      <button type="submit" id="btn">Suche</button>
+    </form>
+    <section class="output"></section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
